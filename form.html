@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>form</title>
+    <style>
+      body {
+        align-items: center;
+      }
+      form {
+        text-align: center;
+      }
+      input {
+        display: block;
+
+        margin: 0 auto;
+      }
+      span {
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="/server.php">
+      <span>first name:</span>
+      <input type="text" name="first name" />
+      <span>last name:</span>
+      <input type="text" />
+      <span>Code meli:</span>
+      <input type="number" />
+      <span>phone:</span>
+      <input type="number" />
+      <span>first name:</span>
+      <input type="text" />
+      <span>favorite color:</span>
+      <input type="color" name="favorite color" value="#ff0000" />
+      <span>birthday:</span>
+      <input type="date" name="birthday" />
+      <span>class:</span>
+      <input list="class" name="class" />
+      <datalist id="class">
+        <option value="claass1"></option>
+        <option value="claass2"></option>
+        <option value="claass3"></option>
+        <option value="claass4"></option>
+        <option value="claass5"></option>
+      </datalist>
+      <span>Email:</span>
+      <input type="email" />
+      <span>Gender:</span>
+      <input type="radio" name="Gender" value="male" />male
+      <input type="radio" name="Gender" value="female" />female
+      <span style="display: block"><b> img cartmeli:</b></span>
+      <input type="file" name="img cartmeli" />
+      <input type="reset" />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
